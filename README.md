@@ -22,5 +22,5 @@ To run the project locally, follow these steps:
    ```bash
    git clone https://github.com/v-kuper/Quizzler-iOS.git
 2.	Open the project in Xcode:
-   cd Quizzler-iOS
+   ``` cd Quizzler-iOS
    open Quizzler-iOS.xcodeproj
