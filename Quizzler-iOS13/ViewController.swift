@@ -1,16 +1,13 @@
 //
 //  ViewController.swift
-//  Quizzler-iOS
+//  Quizzler-iOS13
 //
-//  Created by Vitali on 2025.
+//  Created by Vitali Kupratsevich on 11.02.25.
+//  Copyright © 2025 The App Brewery. All rights reserved.
 //
 
 import UIKit
 
-struct Question {
-    let question: String
-    let answer: String
-}
 
 class ViewController: UIViewController {
     
