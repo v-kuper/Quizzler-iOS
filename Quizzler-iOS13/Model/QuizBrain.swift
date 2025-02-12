@@ -25,13 +25,23 @@ struct QuizBrain {
     ]
     
     var questionNumber = 0
+    var currentScore = 0
     
-    func checkAnswer(userAnswer: String) -> Bool {
-        userAnswer == quiz[questionNumber].answer
+    mutating func checkAnswer(userAnswer: String) -> Bool {
+        if userAnswer != quiz[questionNumber].answer {
+            return false
+        }
+        
+        currentScore += 1
+        return true
     }
     
     mutating func incrementQuestionNumber() {
         questionNumber = (questionNumber + 1) % quiz.count
+        
+        if questionNumber == 0 {
+            currentScore = 0
+        }
     }
     
     func setQuestionText() -> String {
